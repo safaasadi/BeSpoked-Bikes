@@ -2,6 +2,7 @@
   "name": "bespoked-sales-trackedr",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://profiseebespokedbikesapi.azurewebsites.net",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
@@ -47,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "prettier": "3.6.2"
   }
 }
