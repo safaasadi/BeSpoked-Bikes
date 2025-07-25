@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/bespoked-sales-trackedr.iml" filepath="$PROJECT_DIR$/.idea/bespoked-sales-trackedr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/bespoked-sales-tracker.iml" filepath="$PROJECT_DIR$/.idea/bespoked-sales-tracker.iml" />
     </modules>
   </component>
 </project>

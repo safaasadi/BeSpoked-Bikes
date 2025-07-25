@@ -1,0 +1,15 @@
+.navbar-title {
+    font-weight: 400;
+    font-size: 20px;
+    padding-right: 50px;
+}
+
+.navbar-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.navbar-box {
+    flex-grow: 1;
+    display: flex;
+}
