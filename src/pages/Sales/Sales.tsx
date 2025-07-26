@@ -32,7 +32,7 @@ const Sales = () => {
   if (isPending) return <LoadingPage />;
 
   if (error) return <div>An error has occurred</div>;
-  console.log(sales);
+
   return (
     <Box className="sales-container">
       <Typography variant="h5" mb={2}>

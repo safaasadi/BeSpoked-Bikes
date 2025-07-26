@@ -33,3 +33,10 @@ export interface Sale {
     startDate: string;
   };
 }
+
+export interface CreateSale {
+  productId: number;
+  salesPersonId: number;
+  customerId: number;
+  date: string;
+}

@@ -5,7 +5,7 @@ import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import Salespersons from "./pages/Salespersons/Salespersons";
 import Products from "./pages/Products/Products";
 import Customers from "./pages/Customers/Customers";
-// import CreateSale from './pages/CreateSale';
+import CreateSales from "./pages/Sales/CreateSales";
 // import CommissionReport from './pages/CommissionReport';
 import "./App.css";
 import Sales from "./pages/Sales/Sales";
@@ -23,7 +23,7 @@ function App() {
             <Route path="/salespersons" element={<Salespersons />} />
             <Route path="/customers" element={<Customers />} />
             <Route path="/sales" element={<Sales />} />
-            {/*<Route path="/create-sale" element={<CreateSale />} />*/}
+            <Route path="/create-sale" element={<CreateSales />} />
             {/*<Route path="/commission-report" element={<CommissionReport />} />*/}
           </Routes>
         </Suspense>
