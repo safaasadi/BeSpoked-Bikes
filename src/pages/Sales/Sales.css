@@ -1,4 +1,4 @@
-.salespersons-box {
+.sales-box {
     width: 600px;
     margin: 50px auto;
     padding: 2rem;
@@ -7,4 +7,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.sales-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
 }

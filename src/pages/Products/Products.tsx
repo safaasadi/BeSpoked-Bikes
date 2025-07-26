@@ -1,8 +1,8 @@
 import { DataGrid } from "@mui/x-data-grid";
 import { Box, Typography } from "@mui/material";
 import { useQuery } from "@tanstack/react-query";
-import LoadingPage from "../../components/Loading";
-import { productColumns } from "../../components/ProductColumns";
+import LoadingPage from "../../components/LoadingPage/Loading";
+import { productColumns } from "../../components/Columns/ProductColumns";
 import "./Products.css";
 
 const Products = () => {
@@ -22,7 +22,7 @@ const Products = () => {
   return (
     <Box className="product-box">
       <Typography variant="h5" mb={2}>
-        Product Inventory
+        Products
       </Typography>
       <DataGrid
         rows={products}

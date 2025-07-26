@@ -2,31 +2,31 @@ import { useQuery } from "@tanstack/react-query";
 import LoadingPage from "../../components/LoadingPage/Loading";
 import { Box, Typography } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
-import { salespersonsColumns } from "../../components/Columns/SalespersonsColumns";
-import "./Salespersons.css";
+import { customerColumns } from "../../components/Columns/CustomersColumns";
+import "./Customers.css";
 
-const Salespersons = () => {
+const Customers = () => {
   const {
     isPending,
     error,
-    data: salespersons,
+    data: customers,
   } = useQuery({
-    queryKey: ["salespersons"],
-    queryFn: () => fetch(`/api/salespersons`).then((res) => res.json()),
+    queryKey: ["customers"],
+    queryFn: () => fetch(`/api/customers`).then((res) => res.json()),
   });
 
   if (isPending) return <LoadingPage />;
 
   if (error) return <div>An error has occurred</div>;
-  console.log(salespersons);
+
   return (
-    <Box className="salespersons-box">
+    <Box className="customer-box">
       <Typography variant="h5" mb={2}>
-        Salespersons
+        Customers
       </Typography>
       <DataGrid
-        rows={salespersons}
-        columns={salespersonsColumns}
+        rows={customers}
+        columns={customerColumns}
         initialState={{
           pagination: {
             paginationModel: {
@@ -34,7 +34,6 @@ const Salespersons = () => {
             },
           },
         }}
-        getRowId={(row) => row.id}
         pageSizeOptions={[5]}
         disableRowSelectionOnClick
       />
@@ -42,4 +41,4 @@ const Salespersons = () => {
   );
 };
 
-export default Salespersons;
+export default Customers;
