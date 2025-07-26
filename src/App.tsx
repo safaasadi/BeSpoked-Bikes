@@ -6,7 +6,7 @@ import Salespersons from "./pages/Salespersons/Salespersons";
 import Products from "./pages/Products/Products";
 import Customers from "./pages/Customers/Customers";
 import CreateSales from "./pages/Sales/CreateSales";
-// import CommissionReport from './pages/CommissionReport';
+import CommissionReport from "./pages//CommissionReport/CommissionReport";
 import "./App.css";
 import Sales from "./pages/Sales/Sales";
 
@@ -24,7 +24,7 @@ function App() {
             <Route path="/customers" element={<Customers />} />
             <Route path="/sales" element={<Sales />} />
             <Route path="/create-sale" element={<CreateSales />} />
-            {/*<Route path="/commission-report" element={<CommissionReport />} />*/}
+            <Route path="/commission-report" element={<CommissionReport />} />
           </Routes>
         </Suspense>
       </Router>
