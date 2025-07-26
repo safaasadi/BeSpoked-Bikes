@@ -7,26 +7,31 @@ export const salespersonsColumns: GridColDef[] = [
     field: "firstName",
     headerName: "First Name",
     width: 150,
+    editable: true,
   },
   {
     field: "lastName",
     headerName: "Last Name",
     width: 150,
+    editable: true,
   },
   {
     field: "address",
     headerName: "Address",
     width: 250,
+    editable: true,
   },
   {
     field: "phone",
     headerName: "Phone",
     width: 150,
+    editable: true,
   },
   {
     field: "startDate",
     headerName: "Start Date",
     width: 150,
+    editable: true,
     valueFormatter: (value) => {
       if (value) {
         return format(value, "MM/dd/yyyy", { locale });
@@ -38,6 +43,7 @@ export const salespersonsColumns: GridColDef[] = [
     field: "terminationDate",
     headerName: "Termination Date",
     width: 170,
+    editable: true,
     valueFormatter: (value) => {
       if (value) {
         return format(value, "MM/dd/yyyy", { locale });
@@ -49,5 +55,6 @@ export const salespersonsColumns: GridColDef[] = [
     field: "manager",
     headerName: "Manager",
     width: 150,
+    editable: true,
   },
 ];

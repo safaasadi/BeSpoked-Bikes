@@ -44,12 +44,12 @@ export const salesColumns: GridColDef<Sale>[] = [
   },
   {
     field: "commission",
-    headerName: "Commission ($)",
+    headerName: "Commission (%)",
     width: 150,
     valueGetter: (value, row) => {
       const { salePrice = 0, commissionPercentage = 0 } = row.product ?? {};
       return (salePrice * commissionPercentage) / 100;
     },
-    valueFormatter: (value) => `$${Number(value).toFixed(2)}`,
+    valueFormatter: (value) => `${Number(value).toFixed(2)}%`,
   },
 ];

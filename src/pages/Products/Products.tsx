@@ -36,6 +36,16 @@ const Products = () => {
         }}
         pageSizeOptions={[5]}
         disableRowSelectionOnClick
+        processRowUpdate={(updatedRow) => {
+          fetch(`/api/products/${updatedRow.id}`, {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(updatedRow),
+          });
+          return updatedRow;
+        }}
+        getRowId={(row) => row.id}
+        editMode="cell"
       />
     </Box>
   );

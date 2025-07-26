@@ -37,6 +37,15 @@ const Salespersons = () => {
         getRowId={(row) => row.id}
         pageSizeOptions={[5]}
         disableRowSelectionOnClick
+        processRowUpdate={(updatedRow) => {
+          fetch(`/api/salespersons/${updatedRow.id}`, {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(updatedRow),
+          });
+          return updatedRow;
+        }}
+        editMode="cell"
       />
     </Box>
   );
