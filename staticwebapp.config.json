@@ -3,10 +3,6 @@
     "rewrite": "/index.html",
     "exclude": ["/api/*"]
   },
-  "globalHeaders": {
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Methods": "GET, OPTIONS"
-  },
   "routes": [
     {
       "route": "/api/*",
