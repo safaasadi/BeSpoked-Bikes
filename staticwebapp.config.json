@@ -1,6 +1,16 @@
 {
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["*.{css,scss,js,png,gif.ico,jpg,svg}"]
-  }
+    "exclude": ["/api/*"]
+  },
+  "globalHeaders": {
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET, OPTIONS"
+  },
+  "routes": [
+    {
+      "route": "/api/*",
+      "rewrite": "https://profiseebespokedbikesapi.azurewebsites.net/api/:*"
+    }
+  ]
 }
