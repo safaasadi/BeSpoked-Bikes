@@ -18,7 +18,7 @@ const Salespersons = () => {
   if (isPending) return <LoadingPage />;
 
   if (error) return <div>An error has occurred</div>;
-  console.log(salespersons);
+
   return (
     <Box className="salespersons-box">
       <Typography variant="h5" mb={2}>
